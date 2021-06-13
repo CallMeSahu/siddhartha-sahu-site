@@ -10,3 +10,5 @@ Things I have explored so far:
 1. CHALK
 1. Git and GitHub
 1. Netlify 
+2. HTML
+3. CSS
