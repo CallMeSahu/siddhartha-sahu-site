@@ -29,6 +29,10 @@ hr{
     text-align: center;
 }
 
+.container-center .blog-content{
+    text-align: justify;
+    line-height: 150%;
+}
 /* navigation */
 .navigation{
     background-color: var(--primary-color);
