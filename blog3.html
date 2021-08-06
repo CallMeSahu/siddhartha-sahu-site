@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why should everyone learn to code? | siddhartha-sahu</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="svg" href="images/coder2.svg"/>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Siddhartha Sahu</div>
+        <ul class="list-non-bullet nav-pill">
+            <li class="list-item-inline"><a class="link" href="/">HOME</a></li>
+            <li class="list-item-inline"><a class="link" href="/projects.html">PROJECTS</a></li>
+            <li class="list-item-inline"><a class="link" href="/blogs.html">BLOGS</a></li>            
+        </ul>
+    </nav>
+
+    <div class="container-center">
+        <h2 class="main-head" class="blog-heading">How does the Internet Work?</h2>
+        <img class="blog-img" src="/images/blog3-cover.jpg"/>
+        <div class="blog-content">
+        <br>
+        <p>   
+            If there is one thing that has revolutionized the world in the 20th century, it is the internet. It has completely changed the way humans communicates and has impacted a lot of lives. Most of us have been a consumer on the internet for the most part of our lives. As web developers we are becoming a creator on the internet. Hence it becomes very essential for us to know how the internet works from a web-developer's point of view. Let's begin!
+        </p>
+
+        <img class="blog-img" src="/images/blog3-img1.png">
+
+        <p>   
+            At a bottom level, what the internet really is your browser or your machine is making requests to a server and is getting responses back. Browser can be on your PC, Mac, phone or any other multimedia device. The server is just another machine with server software running on it. Every device connected to the internet have an IP address assigned to them. In this case both the server and the machine running the browser have an IP address assigned to them. Now when we type an URL(www.xyz.com) on the browser, the browser does not know the server's IP address associated to the URL. Hence it goes to the ISP for the server's address. The ISP does something known as a DNS lookup which is nothing but a search of association of the URL to the server's address. Once the association is found, it returns the IP address of the server to the browser. Now the browser can send direct requests to the server and gather responses.
+        </p>
+
+        <p>
+            Now to browser sends connection requests to the server and in return, the server sends a response back to the browser. The response is a file and its content type. The file can be an image file, CSS file or JavaScript file. Usually, the file is index.html and the type is text/html. Now the browser knows what to do with it, so it starts parsing the HTML file provided by the server. During parsing, it usually goes top to bottom and pauses when it finds a request for any asset. An asset is another request that has to be made by the browser to procure that file and its content type. These assets are mostly CSS stylesheets and Javascript files that are required to ensure the proper functioning of the webpage. 
+        </p>
+
+        <p>
+            Once the assets are procured from the server, anything on the HTML file that has a reference of the asset files, the assets files are consulted for that. CSS files are referred to add styling to HTML components and JS files are referred to add functionality to HTML components on the webpage. Usually, the CSS files are linked inside the head tag of the HTML files so that the CSS file is procured before parsing components inside the body tag. This step is taken by most web developers to avoid something known as Flash of Unstyled Content (FOUC). Similarly, JavaScript files are sourced at the end inside the body tag because these kinds of files are usually heavy in size and take time to request, procure and parse. Moreover, Javascript files can request stylesheets and images. This process should not slow down the loading of the webpage because parsing is paused whenever a request for an asset is sent. It is always recommended to club CSS and JS files so that less request is sent by the browser.
+        </p>
+        
+        </div>
+    </div>
+
+    <br><br><br>
+    <footer class="footer">
+        <div class="footer-header">
+            Connect With Me
+        </div>
+        <ul class="social-links">
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/siddhartha-sahu/" target="_blank">LinkedIn</a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/CallMeSahu" target="_blank">GitHub</a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/CallMeSahu" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
