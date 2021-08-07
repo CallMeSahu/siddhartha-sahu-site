@@ -40,7 +40,34 @@
         <p>
             Once the assets are procured from the server, anything on the HTML file that has a reference of the asset files, the assets files are consulted for that. CSS files are referred to add styling to HTML components and JS files are referred to add functionality to HTML components on the webpage. Usually, the CSS files are linked inside the head tag of the HTML files so that the CSS file is procured before parsing components inside the body tag. This step is taken by most web developers to avoid something known as Flash of Unstyled Content (FOUC). Similarly, JavaScript files are sourced at the end inside the body tag because these kinds of files are usually heavy in size and take time to request, procure and parse. Moreover, Javascript files can request stylesheets and images. This process should not slow down the loading of the webpage because parsing is paused whenever a request for an asset is sent. It is always recommended to club CSS and JS files so that less request is sent by the browser.
         </p>
+
+        <p>
+            Now lets us have a closer look at the requests and responses in which the browser is involved.
+        </p>
+
+        <img src="/images/blog3-img2.png" alt="" class="blog-image">
+
+        <p>
+            The request header consists of few parameters as mentioned in the diagram. Let us discuss each parameter one by one.
+            <ul>
+                <li><b>Host: </b>It is nothing but the request URL to which the browser wants to connect.</li>
+                <li><b>Request Method: </b>It can be anything from GET, POST, PUT or DELETE. Request using GET should only retrieve data from the server. The POST method is used to submit entities to specified resources on a server. The PUT method replaces all current representations of the target resource with the request payload. The DELETE method deletes the specified resource.</li>
+                <li><b>Path: </b>It is the path of the resource to which the browser is requesting to access or procure.</li>
+                <li><b>Cookies: </b>It is a string that the browser stores to improve the users experience on the website. It is been sent to the server in a hope that the response will be curated as per the user.</li>
+                <li><b>User String: </b>It is a string that containes information about your web browser and the device you are using.</li>
+                <li><b>Content Type: </b>It is the type of content that that the browser is expecting the server to give.</li>
+                <li><b>Payload: </b>When we use the POST method we send data to the server in JSON or XML format. It is known as the payload with your request.</li>
+            </ul>
+        </p>
         
+        <p>
+            The response consist of a header and a response body. The header containes the response information adn the body contains the resource from the server.
+            <ul>
+                <li><b>Content Type: </b>It is the information about the content type of the resource sent by the server. Using this the browser parses the resource file.</li>
+                <li><b>Status Code: </b>It is a message from the server in form of a code. Code 200 means Succesful response, 404 means not found, 500 means internal server error. These were a few common codes.</li>
+                <li><b>Response Body: </b>The responose body consist of a file that the browser requested or a result that the server has sent to the browser. The file can be a html file, css file, a js file or an image file. Results are mostly in form of JSON or XML format.</li>
+            </ul>
+        </p>
         </div>
     </div>
 
