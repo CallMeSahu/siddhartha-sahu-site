@@ -51,12 +51,12 @@ hr{
 }
 
 .navigation .nav-pill{
-    text-align: center;
+    text-align: right;
     padding-top: 1rem;   
 }
 
 .navigation .nav-brand{
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: x-large;
     padding-left: 2rem;    
@@ -69,7 +69,7 @@ hr{
 
 .list-item-inline{
     display: inline;
-    padding: 0rem 2.5rem;
+    padding: 0rem 1rem;
 }
 
 /* header */
